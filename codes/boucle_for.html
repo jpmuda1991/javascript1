@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="demo">
+        <h1>Tableau:</h1>
+        <h1 id="tab">
+
+
+
+
+
+            <script type="text/javascript">
+                let text = "";
+
+
+                for (let i = 0; i <= 20; i++) {
+                    text += "Le nombre est: " + i + "<br>" + "<br>";
+
+                }
+
+                document.getElementById("demo").innerHTML = text;
+
+                const noms = ["Emmanuel", "Jean", "Claire", "Sarah", "Bruce"]
+
+
+                let tableaunom = "";
+
+                for (let i = 0; i <= noms.length - 1; i++) {
+                    tableaunom += (i + 1) + "." + noms[i] + "<br>";
+
+                }
+                document.getElementById("tab").innerHTML = tableaunom;
+            </script>
+
+
+</body>
+
+</html>
