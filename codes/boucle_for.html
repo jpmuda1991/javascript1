@@ -10,36 +10,76 @@
 
 <body>
 
-    <h1 id="demo">
-        <h1>Tableau:</h1>
-        <h1 id="tab">
+    <h1>for compteur:</h1>
+    <p id="demo">
+        <h1>for tableau:</h1>
+        <p id="tab">
+            <br>
+            <h1>while compteur:</h1>
+            <p id="demowhile">
+                <h1>do while :</h1>
+                <p id="demodowhile">
 
 
 
 
-
-            <script type="text/javascript">
-                let text = "";
-
-
-                for (let i = 0; i <= 20; i++) {
-                    text += "Le nombre est: " + i + "<br>" + "<br>";
-
-                }
-
-                document.getElementById("demo").innerHTML = text;
-
-                const noms = ["Emmanuel", "Jean", "Claire", "Sarah", "Bruce"]
+                    <script type="text/javascript">
+                        //for
+                        let text = "";
 
 
-                let tableaunom = "";
+                        for (let i = 0; i <= 20; i++) {
+                            text += "Le nombre est: " + i + "<br>";
 
-                for (let i = 0; i <= noms.length - 1; i++) {
-                    tableaunom += (i + 1) + "." + noms[i] + "<br>";
+                        }
 
-                }
-                document.getElementById("tab").innerHTML = tableaunom;
-            </script>
+                        document.getElementById("demo").innerHTML = text;
+
+                        const noms = ["Emmanuel", "Jean", "Claire", "Sarah", "Bruce"]
+
+
+                        let tableaunom = "";
+
+                        for (let i = 0; i <= noms.length - 1; i++) {
+                            tableaunom += (i + 1) + "." + noms[i] + "<br>";
+
+                        }
+                        document.getElementById("tab").innerHTML = tableaunom;
+
+                        //while
+
+                        let textwhile = "";
+
+                        let m = 0;
+
+                        while (m <= 20) {
+
+                            textwhile += "Le nombre est: " + m + "<br>";
+                            m++;
+
+                        }
+                        document.getElementById("demowhile").innerHTML = textwhile;
+
+
+
+                        //do while
+
+                        let textdowhile = "";
+
+                        let n = 0;
+
+                        do {
+
+                            textdowhile += "Le nombre est: " + n + "<br>";
+                            n++;
+
+                        }
+                        while (n <= 20)
+
+
+
+                        document.getElementById("demodowhile").innerHTML = textdowhile;
+                    </script>
 
 
 </body>
