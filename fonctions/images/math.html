@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>Fonctions mathématiques</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>nombre 1: 10</h2>
+    <h2>nombre 2: 5</h2>
+    <br>
+    <br>
+    <p>Somme:
+        <p id="idsomme"></p>
+    </p>
+    <p> difference:
+        <p id="iddiff"></p>
+    </p>
+    <p>produit:
+        <p id="idprod"></p>
+    </p>
+    <p>quotient:
+        <p id="idquod"></p>
+    </p>
+
+
+    <h1>Conversion Livre a kilogramme</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Poids: 155livre</p>
+    <p> poids en kg:
+        <p id="idpoids"></p>
+    </p>
+
+    <script>
+        //mes nombres
+        var nombre1 = 10;
+        var nombre2 = 5;
+
+        //poids
+        var monpoids = 155
+        var ratio = 2.2
+
+
+        function masomme(nombre1, nombre2) {
+
+            return nombre1 + nombre2
+
+        }
+        document.getElementById("idsomme").innerHTML = masomme(nombre1, nombre2);
+
+
+        function madiff(nombre1, nombre2) {
+
+            return nombre1 - nombre2
+
+        }
+        document.getElementById("iddiff").innerHTML = madiff(nombre1, nombre2);
+
+        function monprod(nombre1, nombre2) {
+
+
+            return nombre1 * nombre2
+
+        }
+        document.getElementById("idprod").innerHTML = monprod(nombre1, nombre2);
+
+        function monquot(nombre1, nombre2) {
+
+            return nombre1 / nombre2
+
+        }
+        document.getElementById("idquod").innerHTML = monquot(nombre1, nombre2);
+
+        function convertir(monpoids, ratio) {
+
+            return monpoids / ratio
+
+
+        }
+        document.getElementById("idpoids").innerHTML = convertir(monpoids, ratio);
+    </script>
+
+
+
+
+</body>
+
+</html>
