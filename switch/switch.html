@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Switch avec simple variable</h2>
+
+    <p>Quel jour est-il?</p>
+    <p>réponse du switch avec variable:
+        <p id="simplevariable"></p>
+    </p>
+    <br>
+    <br>
+    <br>
+
+    <h2>switch avec des retour de fonctions</h2>
+    <p>réponse du switch avec function:
+        <p id="simplefunction"></p>
+    </p>
+
+    <h2>switch avec des fonctions qui sont dans des variables</h2>
+    <p>réponse du switch avec function dans une variable:
+        <p id="functionvar"></p>
+    </p>
+
+
+
+
+
+
+    <script>
+        // code pour variable
+        let joursemaine = 9;
+
+        switch (joursemaine) {
+            case 1:
+                document.getElementById("simplevariable").innerHTML = "il est Lundi";
+                break;
+            case 2:
+                document.getElementById("simplevariable").innerHTML = "il est mardi";
+                break;
+            case 3:
+                document.getElementById("simplevariable").innerHTML = "il est mercredi";
+                break;
+            case 4:
+                document.getElementById("simplevariable").innerHTML = "il est jeudi";
+                break;
+            case 5:
+                document.getElementById("simplevariable").innerHTML = "il est vendredi";
+                break;
+            case 6:
+                document.getElementById("simplevariable").innerHTML = "il est samedi";
+                break;
+
+            case 7:
+                document.getElementById("simplevariable").innerHTML = "il est dimanche";
+                break;
+            default:
+                document.getElementById("simplevariable").innerHTML = "Le jour n'est pas valide";
+                break;
+        }
+
+        //code pour fonction
+
+        let joursem;
+
+        switch (new Date().getDay()) {
+            case 1:
+                document.getElementById("simplefunction").innerHTML = "il est Lundi";
+                break;
+            case 2:
+                document.getElementById("simplefunction").innerHTML = "il est mardi";
+                break;
+            case 3:
+                document.getElementById("simplefunction").innerHTML = "il est mercredi";
+                break;
+            case 4:
+                document.getElementById("simplefunction").innerHTML = "il est jeudi";
+                break;
+            case 5:
+                document.getElementById("simplefunction").innerHTML = "il est vendredi";
+                break;
+            case 6:
+                document.getElementById("simplefunction").innerHTML = "il est samedi";
+                break;
+
+            case 7:
+                document.getElementById("simplefunction").innerHTML = "il est dimanche";
+                break;
+            default:
+                document.getElementById("simplefunction").innerHTML = "Le jour n'est pas valide";
+                break;
+        }
+
+        //code pour fonction dans variable
+
+        let joursem2 = new Date().getDay();
+
+        switch (joursem2) {
+            case 1:
+                document.getElementById("functionvar").innerHTML = "il est Lundi";
+                break;
+            case 2:
+                document.getElementById("functionvar").innerHTML = "il est mardi";
+                break;
+            case 3:
+                document.getElementById("functionvar").innerHTML = "il est mercredi";
+                break;
+            case 4:
+                document.getElementById("functionvar").innerHTML = "il est jeudi";
+                break;
+            case 5:
+                document.getElementById("functionvar").innerHTML = "il est vendredi";
+                break;
+            case 6:
+                document.getElementById("functionvar").innerHTML = "il est samedi";
+                break;
+
+            case 7:
+                document.getElementById("functionvar").innerHTML = "il est dimanche";
+                break;
+            default:
+                document.getElementById("functionvar").innerHTML = "Le jour n'est pas valide";
+                break;
+        }
+    </script>
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+
+
+</html>
