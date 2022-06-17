@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Premiere video sur les classes</h1>
+
+    <p>Affichage des champs d'un objet etudiant:</p>
+    <br>
+    <p>premier objet etudiant:</p>
+    <p id="affichageobjet1"> </p>
+    <br>
+    <p>deuxieme objet etudiant</p>
+    <p id="affichageobjet2"> </p>
+
+
+
+    <script type="text/javascript">
+        // la creation d'une classe etudiante
+
+        class Etudiant {
+            //ma classe commence ici
+
+            //on peut mettre des attributs ici, *pas obligatoire *
+
+            prenom = "inconnue";
+            nom = "inconnue";
+
+            //date de naissance en format annee-mois-jour  ex: 19910131
+            datedenaissance = 000000;
+            matricule = 00000;
+            programme = "inconnue";
+
+            constructor(prenom, nom, daten, matricule, programme) {
+                this.prenom = prenom;
+                this.nom = nom;
+                this.datedenaissance = daten;
+                this.matricule = matricule;
+                this.programme = programme;
+
+            }
+
+            //methode de classe. prochaine video
+
+            //fin de la classe
+
+        }
+
+        //creation d'une instance de la classe etudiant
+        const etudiant1 = new Etudiant("Erik", "Tremblay", 19950225, 34345, "informatique");
+        const etudiant2 = new Etudiant("Sarah", "Plante", 19980401, 23456, "Sociologie");
+        //premier etudiant
+        document.getElementById("affichageobjet1").innerHTML = "prenom: " + etudiant1.prenom +
+            "<br>" + "nom: " + etudiant1.nom + "<br>" +
+            "date de naissance: " + etudiant1.datedenaissance + "<br>" +
+            "matricule: " + etudiant1.matricule + "<br>" +
+            "programme: " + etudiant1.programme
+
+        //deuxieme etudiante
+        document.getElementById("affichageobjet2").innerHTML = "prenom: " + etudiant2.prenom +
+            "<br>" + "nom: " + etudiant2.nom + "<br>" +
+            "date de naissance: " + etudiant2.datedenaissance + "<br>" +
+            "matricule: " + etudiant2.matricule + "<br>" +
+            "programme: " + etudiant2.programme
+    </script>
+
+
+
+
+</body>
+
+</html>
